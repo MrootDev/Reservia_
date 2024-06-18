@@ -1,0 +1,65 @@
+:root{
+    --principal-color : #0065FC;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-left: 60%;
+}
+.link{
+    margin-right: 20%;
+}
+.link:hover{
+    border-top: 3px solid var(--principal-color);
+    color : var(--principal-color);
+    font-weight: bold;
+}
+.form-search{
+    display: inline-flex;
+    width: 100%;
+}
+.search-ico{
+    width: 70px;
+    height:70px;
+    font-size: large;
+   
+}
+.search-btn{
+    padding: 14.5px 13px 14.5px 13px;
+    border-radius: 0 1rem 1rem 0;
+    color: blanchedalmond;
+    background-color: var(--principal-color);
+    margin-left: -6px;
+}
+
+.fas{
+    color: var(--principal-color);
+}
