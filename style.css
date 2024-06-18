@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;700;800&display=swap');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, label, select, button,textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    background:none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    line-height: 1.15;
+}
+:root{
+    --virgin-bg-color: white;
+    --subtext-color:#333;
+    --primary-color: #0065fc;/* Couleur primaire de la charte */
+    --border-color:#d9d9d9;
+    --bg-color:#f2f2f2; /* Gris pour le fond */
+    --wrapIcon-color:#deebff;/*Bleu clair */
+    --font:"Raleway", "sans-serif";/* Police */
+    --maxW:1440px;
+    --fontwgt1:800;
+    --fontwgt2:700;
+}
+body{
+    font-family:var(--font);
+    background-color:var(--virgin-bg-color);
+    box-sizing: border-box;
+    margin: auto;
+}
+.wrap{
+    max-width: var(--maxW);
+}
+
+.container{
+    max-width: var(--maxW);
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;    
+}
+
+.menu{
+    display: grid;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar sign";
+}
+
+.navbar{
+    display: flex;
+    text-align: center;
+    font-weight: 200;
+    grid-area: navbar;
+}
+.navlink{
+    padding: 2rem;
+    border-top: 3px transparent solid;
+    transition-duration: 0.1s;
+    font-weight: 500;
+}
+
+.navlink:hover{
+    border-top: 3px var(--primary-color) solid;
+    color: var(--primary-color);
+}
+.sign{
+    display: flex;
+    grid-area: sign;
+    text-align: center;
+    padding: 2rem;
+    color: var(--primary-color);
+}
+
+.search{
+    display:block;
+}
+.searchHeader{
+    margin: 1rem 0;
+}
+.searchtitle{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+.searchSubtitle{
+    color:var(--subtext-color);
+}
+.searchform{
+    display: inline-flex;
+    max-width: var(--maxW);
+}
+
+.searchicon{
+    padding: 1rem 1.2rem;
+    border-radius: 1rem 0 0 1rem;
+    background:var(--bg-color);
+}
+
+.inputfield{
+    padding: 12px;
+    border: 1px solid var(--bg-color);
+    margin-left: -6px;
+}
+
+
+.searchbtnico{
+    padding: 20px;
+    border-radius: 1rem;
+    color: var(--virgin-bg-color);
+    background-color: var(--primary-color);
+    margin-left: -15px;
+    display: none;
+}
+
+.searchbtn{
+    padding: 14.5px 13px 14.5px 13px;
+    border-radius: 0 1rem 1rem 0;
+    color: var(--virgin-bg-color);
+    background-color: var(--primary-color);
+    margin-left: -6px;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 0;
+    align-items: center;
+}
+
+.filterstitle{
+    margin: 1rem 1rem 1rem 0;
+}
+
+.filtersbtn{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--border-color);
+    background-color: var(--virgin-bg-color);
+    cursor: pointer;
+}
+
+.filtersbtn:hover{
+    transform: scale(1.01);
+}
+.filterswraptitle{
+    margin: 0 1rem;
+}
+
+.filtersbtn .filterwrapicon{
+    display: flex;
+    border-radius: 50%;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    background-color: var(--wrapIcon-color);
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    color: var(--primary-color);
+}
+.searchresult{
+    display: flex;
+    margin: 1rem 0;
+}
+.resultwrapicon{
+    font-size: 13px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--virgin-bg-color);
+    height: 1.5rem;
+    width: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 0;
+    color: var(--primary-color);
+}
+
+.restulttext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: grid;    
+    box-sizing: border-box;
+    grid-template-columns: 6fr 3fr;
+    grid-gap: 2rem;
+}
+
+.sectionsettings{
+    display: grid;
+    background-color: var(--bg-color);
+    row-gap: 2rem;
+    border-radius: 1.25rem ;
+}
+
+.headtitle{
+    grid-column:1/-1;
+    font-size: 1.4rem;
+}
+
+/*Font très grasse*/
+.fontprop1{
+    font-weight: var(--fontwgt1);
+}
+/*Font moins grasse*/
+.fontprop2{
+    font-weight: var(--fontwgt2);
+}
+.name{
+    margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.description{
+    margin:0.1rem 0.75rem 0 0.75rem;
+    font-size: 85%;
+}
+.rate{
+    margin: 0 0 0.2rem 0.5rem;
+}
+
+.staricon[data-active="true"]{
+    color: #0065FC;
+}
+.staricon[data-active="false"]{
+    color:#d9d9d9;
+}
+.cardwrapper{
+    background-color: var(--virgin-bg-color);
+    padding: 0.275rem;
+    border-radius:1.25rem;
+    box-shadow:0 0 16px #0000002e;
+    transition-duration:0.1s;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+.cardwrapper:hover{
+    transform: scale(1.01);
+}
+
+.hosts{    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, 1fr) auto;
+    column-gap: 2rem;
+    padding: 1.7rem;
+}
+.hostcard{
+    width: 100%;
+    max-width: 100%;    
+}
+
+.host{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+}
+.hostcontent{
+    margin-bottom: auto;
+}
+
+.hostimage{
+    height: 7rem;
+    object-fit:cover;
+    max-width: 100%;
+    width: 100%;
+    max-height:100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.moreinfo{
+    grid-column:1/-1;
+}

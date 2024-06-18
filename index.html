@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="144x144" href="assets/ico/R.svg">
+    <script src="https://kit.fontawesome.com/a0526e87eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Reservia</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu wrap">
+                <a class="logo" href="index.html" title="vers la partie des résultats de recherche"><img src="assets/logo/Reservia.svg" alt="logo reservia."></a>
+                <nav class="navbar">
+                    <a class="navlink" href="#hosts" title="vers la partie des résultats de recherche">Hébergement</a>
+                    <a class="navlink" href="#activities" title="vers la partie des activités autour de la zone de recherche">Activités</a>
+                </nav>
+                <div class="sign fontprop1">
+                    <a href="signin.html" title="vers le formulaire d'inscription">S'inscrire</a>
+                </div>
+            </div>
+            <div class="search wrap">
+                <div class="searchHeader">
+                    <h1 class="searchtitle fontprop1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="searchSubtitle fontprop2">En plein centre de ville ou en pleine nature</p>
+                </div>
+                <form class="searchform" action="#" method="GET">
+                        <em class="searchicon fas fa-map-marker-alt searchFormWrapiconIcon"></em> 
+                        <input class="inputfield" type="search" placeholder="Marseille, France">
+                        <button class="searchbtn fontprop1">Rechercher</button>
+                        <button class="searchbtnico"><em class="fas fa-search"></em></button>
+                </form>
+                <div class="filters">
+                        <h3 class="filterstitle fontprop1">Filtres</h3>
+                        <button class="filtersbtn fontprop1" name="ecobtn" type="button">
+                            <em class="fas fa-money-bill-wave filterwrapicon"></em> <span class="filterswraptitle">Économique</span> 
+                        </button>
+                        <button class="filtersbtn fontprop1" name="familiybtn wrapicon" type="button">
+                            <em class="fas fa-child filterwrapicon"></em> <span class="filterswraptitle">Familial</span>
+                        </button>
+                        <button class="filtersbtn fontprop1" name="romancebtn" type="button">
+                            <em class="fas fa-heart filterwrapicon"></em> <span class="filterswraptitle">Romantique</span>
+                        </button>
+                        <button class="filtersbtn fontprop1" name="petbtn" type="button">
+                            <em class="fas fa-dog filterwrapicon"></em> <span class="filterswraptitle">Animaux autorisés</span>
+                        </button>
+                </div>
+                <div class="searchresult">
+                    <em class="fas fa-info resultwrapicon"></em> 
+                    <p class="restulttext">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main wrap">
+                <section class="hosts sectionsettings" id="hosts">
+                    <header class="headtitle fontprop1">
+                        <h2>Hébergements à Marseille</h2>
+                    </header>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/marcus-loke.jpg" alt="dortoir avec lit superposés et des grandes fenêtres donnant sur la rue."/>
+                            </div>
+                            <div class="hostcontent">
+                                <h3 class="name fontprop1">Auberge la Cannebière</h3>
+                                <p class="description">Nuit à partir de <em class="prix">25<em class="fontprop1">€</em></em>
+                                </p> 
+                            </div>                            
+                            <div class="rate">
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/fred-kleber.jpg" alt="chambre lumineuse à lit double, avec une grande fenêtre." />
+                            </div>
+                            <div class="hostcontent">
+                               <h3 class="name fontprop1">Hôtel du port</h3>
+                                <p class="description">Nuit à partir de <em class="prix">52<em class="fontprop1">€</em></em>
+                                </p> 
+                            </div>                            
+                            <div class="rate">
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/reisetopia.jpg" alt="chambre avec un lit et un placard de rangment." />                                
+                            </div>
+                            <div class="hostcontent">
+                                <h3 class="name fontprop1">Hôtel les mouettes</h3>
+                                <p class="description">Nuit à partir de <em class="prix">76<em class="fontprop1">€</em></em>
+                                </p>
+                            </div>                            
+                            <div class="rate">
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                        
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/annie-spratt.jpg" alt="chambre lumineuse, avec un lit kingsize, tables de nuit et lampes de chevet de chaque cotés, et un grand tableau décoratif de thème marin au dessus de la tête de lit." />
+                            </div>
+                            <div class="hostcontent">
+                                <h3 class="name fontprop1">Hôtel de la mer</h3>
+                                <p class="description">Nuit à partir de <em class="prix">46<em class="fontprop1">€</em></em>
+                                </p>
+                            </div>                            
+                            <div class="rate">
+                               
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/nicate-lee.jpg" alt="Dortoir avec lit superposés à structures et échelles en bois." />
+                            </div>
+                            <div class="hostcontent">
+                                <h3 class="name fontprop1">Auberge le Panier</h3>
+                                <p class="description">Nuit à partir de <em class="prix">23<em class="fontprop1">€</em></em>
+                            </p></div>
+                            
+                            <div class="rate">
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="false"></em>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="hostcard cardwrapper">
+                        <a href="#hosts" class="host">
+                            <div class="hostimgcontainer">
+                                <img class="hostimage" src="assets/img/febrian-zakaria-M.jpg" alt="chambre avec une grande fenêtre, bureau et chaise en bois et une télé fixée au mur." />
+                            </div>
+                            <div class="hostcontent">
+                                <h3 class="name fontprop1">Hôtel chez Amina</h3>
+                                <p class="description">Nuit à partir de <em class="prix">96<em class="fontprop1">€</em></em></p>
+                            </div>                            
+                            <div class="rate">
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                                <em class="fas fa-star staricon" data-active="true"></em>
+                            </div>
+                        </a>
+                    </article>                    
+                    <a href="#" class="moreinfo fontprop1">
+                        <h3>
+                            Afficher plus
+                        </h3> 
+                    </a>                               
+                </section>
+            <!-- Populaires -->
+                
+            </section>        
+           
